@@ -51,7 +51,7 @@ def calculate_monopole(freq_mhz: float, vf: float) -> dict:
     }
 
 
-def radiation_pattern(antenna: str) -> list[dict]:
+def radiation_pattern(antenna: str):
     theta = np.linspace(0, 2 * np.pi, 360)
     eps = 1e-9
     sin_t = np.sin(np.clip(theta, eps, np.pi - eps))
